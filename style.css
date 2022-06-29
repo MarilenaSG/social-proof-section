@@ -60,14 +60,14 @@ main {
 .rating--container {
     height: auto;
     min-width: 330px;
-    margin: 20px  auto;
+    margin: 20px auto;
 
 }
 
 .rating--block {
     background-color: var(--neutrallight);
      height: 80px;
-     width: 80%;
+     width: 90%;
      margin-top: 15px;
      border-radius: 10px;
      color: var(--primarydark);
@@ -99,7 +99,7 @@ span {
 }
 
 .testimonials--container {
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .testimonials--container article{
@@ -164,7 +164,7 @@ span {
         grid-template-columns: 2fr 1fr 1fr 2fr;
         grid-template-rows: 1fr 1fr;
         height: 100vh;
-        padding: 8%;
+        padding-left: 10%;
     }
 
     .title--container {
@@ -197,7 +197,6 @@ span {
         grid-row: 1 / 2;
         grid-column: 3 / 5;
         width: 100%;
-        
         display: block;
         
     }
@@ -216,13 +215,16 @@ span {
     .testimonials--container {
         grid-row: 2 / 3;
         grid-column: 1 / 5;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 300px;
+    
         
     }
 
     .rating--block {
-        width: 430px;
+        width: 380px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -230,11 +232,12 @@ span {
     }
 
     .user2 {
-        margin-top: 20px;
+        align-self: center;
     }
 
     .user3 {
-        margin-top: 20px;
+        align-self: flex-end;
+       
     }
 
 
